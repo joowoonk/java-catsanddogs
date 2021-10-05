@@ -1,6 +1,7 @@
 package com.lambdaschool.catsanddogs.models;
 
 import javax.persistence.*;
+import java.util.Locale;
 
 @Entity
 @Table(name = "cats")
@@ -29,7 +30,7 @@ public class Cat
 
     public String getCatname()
     {
-        return catname;
+        return catname.toUpperCase();
     }
 
     public void setCatname(String catname)
